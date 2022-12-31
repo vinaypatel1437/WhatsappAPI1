@@ -5,7 +5,7 @@ const userSchema = new mongoose.Schema({
         type:String,
         reuired: true
     },
-    email: {
+    mobile: {
         type:String,
         required: true,
         unique: true
@@ -21,6 +21,10 @@ const userSchema = new mongoose.Schema({
     },
     date: {
         type: String
+    },
+    avatar: {
+        type: String,
+        required: true,
     }
 })
 
